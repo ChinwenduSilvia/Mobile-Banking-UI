@@ -1,0 +1,237 @@
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: 'Baloo Bhai', cursive;
+  padding: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 230, 220, 0.212)), color-stop(rgba(255, 0, 242, 0.226)), to(pink));
+  background: linear-gradient(180deg, rgba(220, 230, 220, 0.212), rgba(255, 0, 242, 0.226), pink);
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 100px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 10px;
+  height: 700px;
+}
+
+.container .first, .container .second, .container .third {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  width: 280px;
+}
+
+.container .first .content, .container .second .content, .container .third .content {
+  padding: 10px;
+}
+
+.container .first .content h3, .container .second .content h3, .container .third .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  color: rgba(15, 15, 63, 0.945);
+}
+
+.container .first .content p, .container .second .content p, .container .third .content p {
+  font-size: .9em;
+  color: #7e7676;
+}
+
+.container .first button, .container .second button, .container .third button {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(15, 15, 63, 0.945);
+  color: white;
+  font-size: 1em;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+}
+
+.container .first .cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 30px;
+}
+
+.container .first .cards .debit, .container .first .cards .apple, .container .first .cards .bank, .container .first .cards .paypal {
+  border-bottom-right-radius: 50px;
+  height: 150px;
+}
+
+.container .first .cards .debit {
+  background-color: red;
+  padding: 10px;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.container .first .cards .apple {
+  display: inline-block;
+  background-color: rgba(255, 0, 140, 0.548);
+  padding: 10px;
+}
+
+.container .first .cards .bank {
+  display: inline-block;
+  background-color: rgba(0, 255, 34, 0.548);
+  padding: 10px;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.container .first .cards .paypal {
+  display: inline-block;
+  background-color: rgba(47, 0, 255, 0.411);
+  padding: 10px;
+}
+
+.container button:hover {
+  text-shadow: 0px 0px 6px white;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.second {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-image: url(money.jpg);
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.second img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.second .image .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.second .image .centered {
+  position: absolute;
+  left: 100px;
+  bottom: 8px;
+}
+
+.second button:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.third .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.third .details .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third .details .image p {
+  color: rgba(15, 15, 63, 0.945);
+}
+
+.third .details img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.third .details .email p {
+  font-size: 1.1em;
+}
+
+.third .details .email span {
+  font-size: .8em;
+  color: #7e7676;
+}
+
+.third .keypad {
+  width: 280px;
+}
+
+.third .keypad .one, .third .keypad .two, .third .keypad .three, .third .keypad .four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.9em;
+  margin-bottom: 10px;
+}
+
+.third .figure {
+  text-align: center;
+}
+
+.third .figure p {
+  font-size: 1.9em;
+}
+
+.third .figure span {
+  font-size: 2em;
+}
+
+.third button:hover {
+  color: #eee7e7 !important;
+  background-color: #9c9c25;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+/*# sourceMappingURL=mobile-banking.css.map */
